@@ -30,8 +30,8 @@ def greet_new_member(message):
             mention = f"@{new_member.username}" if new_member.username else new_member.first_name
             text = (
                 f"👋 Ласкаво просимо, {mention}!\n\n"
-                f"Щоб було зручно, у нас усе поділено по гілках.\n"
-                f"Ознайомся з інформацією 😉"
+                f"Гілки для всього є, тож не загубишся 😎\n"
+                f"Закидай фотку свого VAG, хай всі заздрять 🚗💨"
             )
             bot.send_message(chat_id, text)
             known_members[chat_id].add(new_member.id)
